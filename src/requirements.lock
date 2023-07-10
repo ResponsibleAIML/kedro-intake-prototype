@@ -10,6 +10,8 @@ anyconfig==0.10.1
     # via kedro
 anyio==3.7.1
     # via jupyter-server
+appdirs==1.4.4
+    # via intake
 argon2-cffi==21.3.0
     # via
     #   jupyter-server
@@ -56,14 +58,19 @@ click==8.1.4
     # via
     #   black
     #   cookiecutter
+    #   dask
     #   kedro
     #   pip-tools
+cloudpickle==2.2.1
+    # via dask
 comm==0.1.3
     # via ipykernel
 cookiecutter==2.2.2
     # via kedro
 coverage[toml]==7.2.7
     # via pytest-cov
+dask==2023.7.0
+    # via intake
 debugpy==1.6.7
     # via ipykernel
 decorator==5.1.1
@@ -72,6 +79,8 @@ defusedxml==0.7.1
     # via nbconvert
 dynaconf==3.1.12
     # via kedro
+entrypoints==0.4
+    # via intake
 exceptiongroup==1.1.2
     # via
     #   anyio
@@ -83,7 +92,10 @@ fastjsonschema==2.17.1
 flake8==4.0.1
     # via -r /home/ensangalufu/code/ResponsibleAIML/kedro-intake-prototype/src/requirements.txt
 fsspec==2023.6.0
-    # via kedro
+    # via
+    #   dask
+    #   intake
+    #   kedro
 gitdb==4.0.10
     # via gitpython
 gitpython==3.1.31
@@ -94,6 +106,7 @@ idna==3.4
     #   requests
 importlib-metadata==6.8.0
     # via
+    #   dask
     #   jupyter-client
     #   jupyterlab-server
     #   kedro
@@ -102,6 +115,8 @@ importlib-resources==6.0.0
     # via kedro
 iniconfig==2.0.0
     # via pytest
+intake==0.7.0
+    # via -r /home/ensangalufu/code/ResponsibleAIML/kedro-intake-prototype/src/requirements.txt
 ipykernel==6.24.0
     # via
     #   ipywidgets
@@ -131,6 +146,7 @@ jedi==0.18.2
 jinja2==3.1.2
     # via
     #   cookiecutter
+    #   intake
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
@@ -195,6 +211,8 @@ kedro==0.18.11
     #   kedro-telemetry
 kedro-telemetry==0.2.4
     # via -r /home/ensangalufu/code/ResponsibleAIML/kedro-intake-prototype/src/requirements.txt
+locket==1.0.0
+    # via partd
 markdown-it-py==3.0.0
     # via rich
 markupsafe==2.1.3
@@ -213,6 +231,8 @@ mistune==3.0.1
     # via nbconvert
 more-itertools==9.1.0
     # via kedro
+msgpack==1.0.5
+    # via intake
 mypy-extensions==1.0.0
     # via black
 nbclassic==1.0.0
@@ -253,6 +273,7 @@ omegaconf==2.3.0
 packaging==23.1
     # via
     #   build
+    #   dask
     #   ipykernel
     #   jupyter-server
     #   jupyterlab
@@ -266,6 +287,8 @@ pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
+partd==1.4.0
+    # via dask
 pathspec==0.11.1
     # via black
 pexpect==4.8.0
@@ -335,6 +358,8 @@ pytoolconfig[global]==1.2.5
 pyyaml==6.0
     # via
     #   cookiecutter
+    #   dask
+    #   intake
     #   kedro
     #   omegaconf
 pyzmq==25.1.0
@@ -357,6 +382,7 @@ referencing==0.29.1
 requests==2.31.0
     # via
     #   cookiecutter
+    #   intake
     #   jupyterlab-server
     #   kedro-telemetry
 rich==13.4.2
@@ -406,6 +432,10 @@ tomli==2.0.1
     #   pyproject-hooks
     #   pytest
     #   pytoolconfig
+toolz==0.12.0
+    # via
+    #   dask
+    #   partd
 toposort==1.10
     # via kedro
 tornado==6.3.2
