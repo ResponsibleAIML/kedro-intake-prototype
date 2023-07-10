@@ -268,6 +268,8 @@ notebook==6.5.4
     #   jupyterlab
 notebook-shim==0.2.3
     # via nbclassic
+numpy==1.25.1
+    # via pandas
 omegaconf==2.3.0
     # via kedro
 packaging==23.1
@@ -283,6 +285,8 @@ packaging==23.1
     #   pytoolconfig
     #   qtconsole
     #   qtpy
+pandas==2.0.3
+    # via -r /home/ensangalufu/code/ResponsibleAIML/kedro-intake-prototype/src/requirements.txt
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
@@ -351,10 +355,13 @@ python-dateutil==2.8.2
     # via
     #   arrow
     #   jupyter-client
+    #   pandas
 python-slugify==8.0.1
     # via cookiecutter
 pytoolconfig[global]==1.2.5
     # via rope
+pytz==2023.3
+    # via pandas
 pyyaml==6.0
     # via
     #   cookiecutter
@@ -468,6 +475,8 @@ typing-extensions==4.7.1
     # via
     #   black
     #   ipython
+tzdata==2023.3
+    # via pandas
 urllib3==2.0.3
     # via requests
 wcwidth==0.2.6
